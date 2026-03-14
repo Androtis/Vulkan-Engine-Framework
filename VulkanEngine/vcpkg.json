@@ -1,0 +1,10 @@
+{
+  "dependencies": [
+    "vulkan",
+    "vulkan-memory-allocator",
+    "vulkan-validationlayers",
+    "volk",
+    "glfw3",
+    "glm"
+  ]
+}
