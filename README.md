@@ -28,16 +28,19 @@ mkdir VulkanEngineFramework
 cd VulkanEngineFramework/
 
 # Clone the repository
-git clone git@github.com:Androtis/Vulkan-Engine-Framework.git
-cd VulkanEngine
+git clone https://github.com/Androtis/Vulkan-Engine-Framework.git
+cd Vulkan-Engine-Framework/VulkanEngine
+
+# Prep VCPKG - Note: This may take a while
+vcpkg install
 
 # Build
-cmake build
+cmake --preset vcpkg
 cd build/
 make
 
 # Run
-./VulkanEngine
+./VulkanEngineFramework
 ```
 
 **This README is subject to revision and the above is not finalized.**
