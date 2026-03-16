@@ -5,8 +5,10 @@ project(VulkanProject)
 # Find packages
 find_package(Vulkan REQUIRED)
 find_package(glfw3 CONFIG REQUIRED)
+find_package(volk REQUIRED)
 find_package(glm CONFIG REQUIRED)
 find_package(VulkanMemoryAllocator CONFIG REQUIRED)
+
 
 add_executable(VulkanEngineFramework main.cpp)
 
@@ -14,6 +16,7 @@ add_executable(VulkanEngineFramework main.cpp)
 target_link_libraries(VulkanEngineFramework PRIVATE 
     Vulkan::Vulkan 
     glfw                      # Changed from glfw::glfw
+    volk::volk
     glm::glm                  # Use the namespaced glm target
     GPUOpen::VulkanMemoryAllocator # Correct VMA target name
 )

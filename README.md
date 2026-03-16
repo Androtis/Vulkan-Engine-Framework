@@ -35,7 +35,7 @@ cd Vulkan-Engine-Framework/VulkanEngine
 vcpkg install
 
 # Build
-cmake --preset vcpkg
+cmake --preset debug
 cd build/
 make
 
