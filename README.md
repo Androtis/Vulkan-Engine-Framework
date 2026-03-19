@@ -20,7 +20,7 @@ In order to compile the code from source code you will first need:
 - Your choice of C++ compiler set to **C++20**, For Windows I'd recommend [G++](https://www.mingw-w64.org/) meanwhile on MacOS or Linux you can use your own Package Manager.
 - Install [Make](https://www.gnu.org/software/make/).
 - Install [CMake](https://cmake.org/getting-started/).
-- Build [VCPKG](https://github.com/microsoft/vcpkg) from source and set the build folder as an enviornment variable under $VCPKG_ROOT.
+- Build [VCPKG](https://github.com/microsoft/vcpkg) from source and set the build folder as an enviornment variable under VCPKG_ROOT.
 
 ``` bash
 # Make a safe folder to store the repo
@@ -35,12 +35,21 @@ cd Vulkan-Engine-Framework/VulkanEngine
 vcpkg install
 
 # Build
-cmake --preset debug
+cmake --preset release
 cd build/
 make
 
 # Run
 ./VulkanEngineFramework
+```
+
+If you want to build in debug with validation layers:
+
+Download the [Vulkan SDK](https://vulkan.lunarg.com/) for your operating system.
+Follow the previous steps except use:
+
+```zsh  
+cmake --preset debug 
 ```
 
 **This README is subject to revision and the above is not finalized.**

@@ -2,6 +2,11 @@
 cmake_minimum_required(VERSION 3.10)
 project(VulkanProject)
 
+#Sets the C++ Version
+set(CMAKE_CXX_STANDARD 20)
+set(CMAKE_CXX_STANDARD_REQUIRED ON)
+set(CMAKE_CXX_EXTENSIONS OFF)
+
 # Find packages
 find_package(Vulkan REQUIRED)
 find_package(glfw3 CONFIG REQUIRED)
