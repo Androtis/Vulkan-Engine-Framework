@@ -84,5 +84,6 @@ vcpkg_installed/
 #Dev-made Ignores
 .vscode
 /VulkanEngine/build
+.clang-format
 
 # End of https://www.toptal.com/developers/gitignore/api/vcpkg,visualstudiocode,c++,cmake

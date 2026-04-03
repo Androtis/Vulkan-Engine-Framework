@@ -17,8 +17,8 @@ I created this repository to keep track of where this project will go and to org
 
 In order to compile the code from source code you will first need:
 
-- Your choice of C++ compiler set to **C++20**, For Windows I'd recommend [G++](https://www.mingw-w64.org/) meanwhile on MacOS or Linux you can use your own Package Manager.
-- Install [Make](https://www.gnu.org/software/make/).
+- Your choice of C++ compiler set to **C++20**, I'd recommend [Clang++](https://clang.llvm.org/).
+- Install [Ninja](https://ninja-build.org/).
 - Install [CMake](https://cmake.org/getting-started/).
 - Build [VCPKG](https://github.com/microsoft/vcpkg) from source and set the build folder as an enviornment variable under VCPKG_ROOT.
 

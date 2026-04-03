@@ -6,7 +6,7 @@ project(VulkanProject)
 set(CMAKE_CXX_STANDARD 20)
 set(CMAKE_CXX_STANDARD_REQUIRED ON)
 set(CMAKE_CXX_EXTENSIONS OFF)
-
+ 
 # Find packages
 find_package(Vulkan REQUIRED)
 find_package(glfw3 CONFIG REQUIRED)
@@ -16,6 +16,7 @@ find_package(VulkanMemoryAllocator CONFIG REQUIRED)
 
 
 add_executable(VulkanEngineFramework main.cpp)
+target_compile_definitions(VulkanEngineFramework PRIVATE VK_NO_PROTOTYPES)
 
 # Link libraries using correct target names
 target_link_libraries(VulkanEngineFramework PRIVATE 
